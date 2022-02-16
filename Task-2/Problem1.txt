@@ -1,0 +1,18 @@
+Divisiblity of a Number(N) by 3 without using modulus operator explicitly
+
+Logic : its based on the fact that any number can be wriiten in the form of 3q,3q+1,3q+2 where N and q are whole numbers.
+
+METHOD Main
+	Input N
+	WHILE N>0                //For if N >0 it the loop deducts 3 from it until its reached 0 if it doesnt reach zero its either -1 or -2.
+		N=N-3
+	END LOOP
+	If N==0 THEN            // If N is 0 then the number N and be written as 3q where q is a positive integer
+		Print "True"
+	ELSE
+		Print"False"   // If N is in the form of 3q+1 or 3q+2 then the final answer will be -2 and -1 respective so the statement false will be displayed
+	END IF
+END
+
+ 	
+

@@ -1,0 +1,21 @@
+Program for Fibonacci Sequence
+
+
+METHOD F (Integer N)        // Static method F is made with an integer parameter N
+
+    DECLARE Integer Array f[N+2]  // declares an array of memory N+2
+    
+    ASSIGN f[0] = 0
+    ASSIGN f[1] = 1
+
+    DECLARE Integer i                     // intialize i at 0
+    FOR i = 2 to n                        // for loop iteration conditions (i=2,i<=N,i++)
+        PERFORM f[i] = f[i-1] + f[i-2]    // Defining the entries into the arrays using the logic for fibonacci sequence
+    END LOOP
+
+RETURN Integer f[N]            // Last Entry of the array is taken as the integer return type
+
+METHOD Main
+    Input N            // Scanner class reads input number N
+    Output F(N)        // F(N) method is called and output is shown as per the Scanner input
+END
